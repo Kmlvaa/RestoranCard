@@ -1,0 +1,117 @@
+.Card {
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f1a93c;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: rgb(17, 17, 17);
+    transition: background-color 0.5s ease;
+}
+
+.Card:hover {
+    cursor: pointer;
+}
+
+.Card:hover .ImageCover {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding: 0;
+    border: none;
+    transform: none;
+    z-index: 0;
+}
+
+.Card:hover .ImageBorder {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+.Card:hover .CardImage {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+.CardHeader {
+    width: 235px;
+    height: 235px;
+}
+
+.ImageCover {
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    transform: translateY(-50%);
+    width: 220px;
+    height: 220px;
+    padding: 5px;
+    border: 2px dashed white;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ImageBorder {
+    width: 205px;
+    height: 205px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.CardImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 50%;
+    transition: all 0.7s ease-in-out;
+}
+
+.CardBody {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.CardBody h1 {
+    size: 50px;
+}
+
+.CardBody p,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.CardIcon {
+    color: #ee9e23;
+}
+
+h1 span {
+    color: #ee9e23;
+}
+
+.CardBody p {
+    color: #ee9e23;
+}
