@@ -1,6 +1,8 @@
 .Card {
-    width: 500px;
-    height: 250px;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
     padding: 10px;
     position: relative;
     border-radius: 8px;
@@ -95,7 +97,7 @@
 }
 
 .CardBody h1 {
-    size: 50px;
+    font-size: 20px;
 }
 
 .CardBody p,
@@ -115,3 +117,28 @@ h1 span {
 .CardBody p {
     color: #ee9e23;
 }
+
+@media (max-width: 1200px) {
+    .Card {
+      flex-direction: column;
+      aspect-ratio: auto;
+      height: auto;
+    }
+  
+    .ImageCover {
+      position: relative;
+      left: 0;
+      top: 0;
+      transform: none;
+      margin-bottom: 1rem;
+    }
+  
+    .CardBody h1 {
+      font-size: 1.25rem;
+    }
+  
+    .CardBody p {
+      font-size: 0.95rem;
+    }
+  }
+  
