@@ -8,7 +8,7 @@ export default function RestoranCard({ name, imageUrl, cuisine, reytinq }) {
             <div className='CardHeader'>
                 <div className='ImageCover'>
                     <div className='ImageBorder'>
-                        <img src={imageUrl} alt='Restoran image' className='CardImage' />
+                        <img src={imageUrl} className='CardImage' />
                     </div>
                 </div>
             </div>
